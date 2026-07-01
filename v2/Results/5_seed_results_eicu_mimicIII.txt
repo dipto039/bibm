@@ -1,0 +1,495 @@
+
+
+EICU RUNS:
+
+Eicu Hybrid BiLSTM + BiMamba + Static ANN Fusion Binary | 5-Seed Summary
+
+test_acc: 0.8931 ± 0.0051
+test_f1_macro: 0.6549 ± 0.0032
+test_auroc: 0.8302 ± 0.0038
+test_auprc: 0.3035 ± 0.0064
+test_f1_weighted: 0.8986 ± 0.0029
+
+Per-seed:
+seed=42 | acc=0.8849 | f1_macro=0.6524 | f1_weighted=0.8940 | auroc=0.8281 | auprc=0.2969
+seed=43 | acc=0.8941 | f1_macro=0.6508 | f1_weighted=0.8985 | auroc=0.8290 | auprc=0.2976
+seed=44 | acc=0.8972 | f1_macro=0.6582 | f1_weighted=0.9011 | auroc=0.8365 | auprc=0.3122
+seed=45 | acc=0.8972 | f1_macro=0.6576 | f1_weighted=0.9010 | auroc=0.8304 | auprc=0.3049
+seed=46 | acc=0.8921 | f1_macro=0.6557 | f1_weighted=0.8982 | auroc=0.8269 | auprc=0.3057
+
+
+Hybrid BiLSTM + BiMamba + Static ANN Fusion Ordinal | 5-Seed Summary
+
+test_acc: 0.7009 ± 0.0082
+test_f1_macro: 0.5218 ± 0.0036
+test_auroc_macro: 0.8316 ± 0.0030
+test_auprc_macro: 0.4582 ± 0.0066
+test_auroc_gt3: 0.8196 ± 0.0051
+test_auroc_gt7: 0.8436 ± 0.0045
+test_auprc_gt3: 0.5969 ± 0.0044
+test_auprc_gt7: 0.3196 ± 0.0095
+test_f1_weighted: 0.7187 ± 0.0051
+
+Per-seed:
+seed=42 | acc=0.7015 | f1_macro=0.5234 | f1_weighted=0.7202 | auroc_macro=0.8303 | auprc_macro=0.4499
+seed=43 | acc=0.7004 | f1_macro=0.5189 | f1_weighted=0.7176 | auroc_macro=0.8293 | auprc_macro=0.4579
+seed=44 | acc=0.6977 | f1_macro=0.5231 | f1_weighted=0.7175 | auroc_macro=0.8363 | auprc_macro=0.4676
+seed=45 | acc=0.7138 | f1_macro=0.5261 | f1_weighted=0.7261 | auroc_macro=0.8292 | auprc_macro=0.4549
+seed=46 | acc=0.6913 | f1_macro=0.5172 | f1_weighted=0.7120 | auroc_macro=0.8328 | auprc_macro=0.4608
+
+
+
+____________________________________________________________________________________________________________
+____________________________________________________________________________________________________________
+
+eICU BiLSTM + Static ANN Fusion Binary | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.8866 ± 0.0069
+test_f1_macro: 0.6597 ± 0.0012
+test_f1_weighted: 0.8958 ± 0.0037
+test_auroc: 0.8308 ± 0.0031
+test_auprc: 0.3092 ± 0.0046
+
+Per-seed:
+seed=42 | acc=0.8986 | f1_macro=0.6608 | f1_weighted=0.9022 | auroc=0.8357 | auprc=0.3168
+seed=43 | acc=0.8846 | f1_macro=0.6593 | f1_weighted=0.8947 | auroc=0.8309 | auprc=0.3094
+seed=44 | acc=0.8807 | f1_macro=0.6579 | f1_weighted=0.8925 | auroc=0.8294 | auprc=0.3047
+seed=45 | acc=0.8855 | f1_macro=0.6603 | f1_weighted=0.8954 | auroc=0.8272 | auprc=0.3076
+seed=46 | acc=0.8836 | f1_macro=0.6604 | f1_weighted=0.8944 | auroc=0.8308 | auprc=0.3072
+
+
+eICU BiLSTM + Static ANN Fusion Ordinal | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.7045 ± 0.0031
+test_f1_macro: 0.5179 ± 0.0023
+test_f1_weighted: 0.7182 ± 0.0014
+test_auroc_macro: 0.8158 ± 0.0027
+test_auprc_macro: 0.4493 ± 0.0037
+test_auroc_gt3: 0.7955 ± 0.0020
+test_auroc_gt7: 0.8361 ± 0.0047
+test_auprc_gt3: 0.5792 ± 0.0030
+test_auprc_gt7: 0.3194 ± 0.0045
+
+Per-seed:
+seed=42 | acc=0.7074 | f1_macro=0.5157 | f1_weighted=0.7191 | auroc_macro=0.8123 | auprc_macro=0.4457 | auroc_gt3=0.7963 | auroc_gt7=0.8283 | auprc_gt3=0.5763 | auprc_gt7=0.3151
+seed=43 | acc=0.7001 | f1_macro=0.5209 | f1_weighted=0.7163 | auroc_macro=0.8198 | auprc_macro=0.4541 | auroc_gt3=0.7986 | auroc_gt7=0.8410 | auprc_gt3=0.5834 | auprc_gt7=0.3248
+seed=44 | acc=0.7051 | f1_macro=0.5173 | f1_weighted=0.7181 | auroc_macro=0.8152 | auprc_macro=0.4484 | auroc_gt3=0.7932 | auroc_gt7=0.8372 | auprc_gt3=0.5790 | auprc_gt7=0.3178
+seed=45 | acc=0.7073 | f1_macro=0.5196 | f1_weighted=0.7199 | auroc_macro=0.8162 | auprc_macro=0.4522 | auroc_gt3=0.7946 | auroc_gt7=0.8378 | auprc_gt3=0.5810 | auprc_gt7=0.3234
+seed=46 | acc=0.7027 | f1_macro=0.5158 | f1_weighted=0.7175 | auroc_macro=0.8156 | auprc_macro=0.4461 | auroc_gt3=0.7949 | auroc_gt7=0.8363 | auprc_gt3=0.5763 | auprc_gt7=0.3158
+
+____________________________________________________________________________________________________________ ____________________________________________________________________________________________________________
+
+
+eICU OME-Fusion Binary | 5-Seed Summary
+BiLSTM + Transformer + Mamba + Static ANN
+
+Mean ± SD:
+test_acc: 0.8886 ± 0.0078
+test_f1_macro: 0.6571 ± 0.0013
+test_f1_weighted: 0.8965 ± 0.0040
+test_auroc: 0.8294 ± 0.0026
+test_auprc: 0.3061 ± 0.0018
+
+Per-seed:
+seed=42 | acc=0.8890 | f1_macro=0.6587 | f1_weighted=0.8970 | auroc=0.8310 | auprc=0.3074
+seed=43 | acc=0.8888 | f1_macro=0.6580 | f1_weighted=0.8968 | auroc=0.8300 | auprc=0.3038
+seed=44 | acc=0.8821 | f1_macro=0.6572 | f1_weighted=0.8932 | auroc=0.8325 | auprc=0.3084
+seed=45 | acc=0.8821 | f1_macro=0.6558 | f1_weighted=0.8930 | auroc=0.8259 | auprc=0.3052
+seed=46 | acc=0.9011 | f1_macro=0.6560 | f1_weighted=0.9028 | auroc=0.8276 | auprc=0.3058
+
+
+eICU OME-Fusion Ordinal | 5-Seed Summary
+BiLSTM + Transformer + Mamba + Static ANN
+
+Mean ± SD:
+test_acc: 0.7072 ± 0.0031
+test_f1_macro: 0.5176 ± 0.0018
+test_f1_weighted: 0.7203 ± 0.0019
+test_auroc_macro: 0.8174 ± 0.0019
+test_auprc_macro: 0.4473 ± 0.0042
+test_auroc_gt3: 0.7984 ± 0.0009
+test_auroc_gt7: 0.8365 ± 0.0038
+test_auprc_gt3: 0.5777 ± 0.0022
+test_auprc_gt7: 0.3170 ± 0.0064
+
+Per-seed:
+seed=42 | acc=0.7033 | f1_macro=0.5157 | f1_weighted=0.7182 | auroc_macro=0.8143 | auprc_macro=0.4417 | auroc_gt3=0.7982 | auroc_gt7=0.8305 | auprc_gt3=0.5744 | auprc_gt7=0.3090
+seed=43 | acc=0.7113 | f1_macro=0.5196 | f1_weighted=0.7226 | auroc_macro=0.8194 | auprc_macro=0.4519 | auroc_gt3=0.7988 | auroc_gt7=0.8401 | auprc_gt3=0.5801 | auprc_gt7=0.3237
+seed=44 | acc=0.7080 | f1_macro=0.5189 | f1_weighted=0.7212 | auroc_macro=0.8175 | auprc_macro=0.4447 | auroc_gt3=0.7998 | auroc_gt7=0.8352 | auprc_gt3=0.5767 | auprc_gt7=0.3127
+seed=45 | acc=0.7052 | f1_macro=0.5157 | f1_weighted=0.7186 | auroc_macro=0.8181 | auprc_macro=0.4508 | auroc_gt3=0.7976 | auroc_gt7=0.8385 | auprc_gt3=0.5783 | auprc_gt7=0.3232
+seed=46 | acc=0.7083 | f1_macro=0.5182 | f1_weighted=0.7211 | auroc_macro=0.8179 | auprc_macro=0.4477 | auroc_gt3=0.7977 | auroc_gt7=0.8381 | auprc_gt3=0.5791 | auprc_gt7=0.3162
+
+____________________________________________________________________________________________________________
+____________________________________________________________________________________________________________
+
+eICU PatchTST-style Transformer + Static ANN Fusion Binary | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.8890 ± 0.0016
+test_f1_macro: 0.6584 ± 0.0031
+test_f1_weighted: 0.8969 ± 0.0008
+test_auroc: 0.8290 ± 0.0024
+test_auprc: 0.3060 ± 0.0037
+
+Per-seed:
+seed=42 | acc=0.8919 | f1_macro=0.6567 | f1_weighted=0.8982 | auroc=0.8305 | auprc=0.3046
+seed=43 | acc=0.8882 | f1_macro=0.6548 | f1_weighted=0.8960 | auroc=0.8296 | auprc=0.3041
+seed=44 | acc=0.8880 | f1_macro=0.6592 | f1_weighted=0.8965 | auroc=0.8313 | auprc=0.3047
+seed=45 | acc=0.8887 | f1_macro=0.6585 | f1_weighted=0.8968 | auroc=0.8287 | auprc=0.3037
+seed=46 | acc=0.8883 | f1_macro=0.6630 | f1_weighted=0.8972 | auroc=0.8250 | auprc=0.3126
+
+
+eICU PatchTST-style Transformer + Static ANN Fusion Ordinal | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.7130 ± 0.0060
+test_f1_macro: 0.5202 ± 0.0038
+test_f1_weighted: 0.7229 ± 0.0037
+test_auroc_macro: 0.8183 ± 0.0013
+test_auprc_macro: 0.4489 ± 0.0035
+test_auroc_gt3: 0.7979 ± 0.0017
+test_auroc_gt7: 0.8386 ± 0.0019
+test_auprc_gt3: 0.5769 ± 0.0052
+test_auprc_gt7: 0.3209 ± 0.0021
+
+Per-seed:
+seed=42 | acc=0.7178 | f1_macro=0.5214 | f1_weighted=0.7253 | auroc_macro=0.8192 | auprc_macro=0.4506 | auroc_gt3=0.7984 | auroc_gt7=0.8401 | auprc_gt3=0.5808 | auprc_gt7=0.3205
+seed=43 | acc=0.7138 | f1_macro=0.5193 | f1_weighted=0.7232 | auroc_macro=0.8191 | auprc_macro=0.4474 | auroc_gt3=0.7978 | auroc_gt7=0.8404 | auprc_gt3=0.5750 | auprc_gt7=0.3199
+seed=44 | acc=0.7192 | f1_macro=0.5259 | f1_weighted=0.7272 | auroc_macro=0.8190 | auprc_macro=0.4541 | auroc_gt3=0.8006 | auroc_gt7=0.8374 | auprc_gt3=0.5839 | auprc_gt7=0.3243
+seed=45 | acc=0.7048 | f1_macro=0.5157 | f1_weighted=0.7179 | auroc_macro=0.8161 | auprc_macro=0.4456 | auroc_gt3=0.7963 | auroc_gt7=0.8360 | auprc_gt3=0.5726 | auprc_gt7=0.3185
+seed=46 | acc=0.7093 | f1_macro=0.5187 | f1_weighted=0.7209 | auroc_macro=0.8180 | auprc_macro=0.4467 | auroc_gt3=0.7966 | auroc_gt7=0.8393 | auprc_gt3=0.5722 | auprc_gt7=0.3211
+
+____________________________________________________________________________________________________________
+____________________________________________________________________________________________________________
+
+eICU Pure Mamba + Static ANN Fusion Binary | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.8927 ± 0.0039
+test_f1_macro: 0.6634 ± 0.0020
+test_f1_weighted: 0.8995 ± 0.0019
+test_auroc: 0.8303 ± 0.0055
+test_auprc: 0.3142 ± 0.0067
+
+Per-seed:
+seed=42 | acc=0.8896 | f1_macro=0.6625 | f1_weighted=0.8978 | auroc=0.8318 | auprc=0.3206
+seed=43 | acc=0.8937 | f1_macro=0.6658 | f1_weighted=0.9004 | auroc=0.8307 | auprc=0.3150
+seed=44 | acc=0.8878 | f1_macro=0.6647 | f1_weighted=0.8972 | auroc=0.8384 | auprc=0.3207
+seed=45 | acc=0.8949 | f1_macro=0.6607 | f1_weighted=0.9003 | auroc=0.8241 | auprc=0.3061
+seed=46 | acc=0.8973 | f1_macro=0.6632 | f1_weighted=0.9018 | auroc=0.8265 | auprc=0.3087
+
+
+eICU Pure Mamba + Static ANN Fusion Ordinal | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.7107 ± 0.0091
+test_f1_macro: 0.5212 ± 0.0046
+test_f1_weighted: 0.7228 ± 0.0052
+test_auroc_macro: 0.8209 ± 0.0034
+test_auprc_macro: 0.4536 ± 0.0031
+test_auroc_gt3: 0.8026 ± 0.0020
+test_auroc_gt7: 0.8391 ± 0.0051
+test_auprc_gt3: 0.5858 ± 0.0021
+test_auprc_gt7: 0.3215 ± 0.0045
+
+Per-seed:
+seed=42 | acc=0.7174 | f1_macro=0.5291 | f1_weighted=0.7281 | auroc_macro=0.8227 | auprc_macro=0.4574 | auroc_gt3=0.8043 | auroc_gt7=0.8411 | auprc_gt3=0.5881 | auprc_gt7=0.3268
+seed=43 | acc=0.7127 | f1_macro=0.5197 | f1_weighted=0.7239 | auroc_macro=0.8227 | auprc_macro=0.4529 | auroc_gt3=0.8042 | auroc_gt7=0.8413 | auprc_gt3=0.5858 | auprc_gt7=0.3200
+seed=44 | acc=0.6959 | f1_macro=0.5209 | f1_weighted=0.7146 | auroc_macro=0.8246 | auprc_macro=0.4561 | auroc_gt3=0.8037 | auroc_gt7=0.8455 | auprc_gt3=0.5862 | auprc_gt7=0.3259
+seed=45 | acc=0.7187 | f1_macro=0.5175 | f1_weighted=0.7262 | auroc_macro=0.8172 | auprc_macro=0.4521 | auroc_gt3=0.8002 | auroc_gt7=0.8342 | auprc_gt3=0.5864 | auprc_gt7=0.3179
+seed=46 | acc=0.7090 | f1_macro=0.5187 | f1_weighted=0.7214 | auroc_macro=0.8173 | auprc_macro=0.4497 | auroc_gt3=0.8009 | auroc_gt7=0.8336 | auprc_gt3=0.5824 | auprc_gt7=0.3171
+
+____________________________________________________________________________________________________________
+____________________________________________________________________________________________________________
+
+Transformer + Static ANN Fusion Binary | 5-Seed Summary
+
+test_acc: 0.8931 ± 0.0034
+test_f1_macro: 0.6588 ± 0.0024
+test_auroc: 0.8300 ± 0.0020
+test_auprc: 0.3088 ± 0.0019
+test_f1_weighted: 0.8991 ± 0.0019
+
+Per-seed:
+seed=42 | acc=0.8921 | f1_macro=0.6619 | f1_weighted=0.8990 | auroc=0.8267 | auprc=0.3110
+seed=43 | acc=0.8913 | f1_macro=0.6596 | f1_weighted=0.8983 | auroc=0.8315 | auprc=0.3105
+seed=44 | acc=0.8974 | f1_macro=0.6584 | f1_weighted=0.9012 | auroc=0.8300 | auprc=0.3067
+seed=45 | acc=0.8959 | f1_macro=0.6589 | f1_weighted=0.9005 | auroc=0.8303 | auprc=0.3086
+seed=46 | acc=0.8890 | f1_macro=0.6552 | f1_weighted=0.8965 | auroc=0.8314 | auprc=0.3070
+
+
+Transformer + Static ANN Fusion Ordinal | 5-Seed Summary
+
+test_acc: 0.7074 ± 0.0093
+test_f1_macro: 0.5203 ± 0.0021
+test_auroc_macro: 0.8205 ± 0.0026
+test_auprc_macro: 0.4510 ± 0.0038
+test_auroc_gt3: 0.8017 ± 0.0016
+test_auroc_gt7: 0.8394 ± 0.0047
+test_auprc_gt3: 0.5823 ± 0.0020
+test_auprc_gt7: 0.3198 ± 0.0057
+test_f1_weighted: 0.7210 ± 0.0048
+
+Per-seed:
+seed=42 | acc=0.7111 | f1_macro=0.5221 | f1_weighted=0.7235 | auroc_macro=0.8228 | auprc_macro=0.4549
+seed=43 | acc=0.6997 | f1_macro=0.5176 | f1_weighted=0.7165 | auroc_macro=0.8204 | auprc_macro=0.4461
+seed=44 | acc=0.7189 | f1_macro=0.5184 | f1_weighted=0.7264 | auroc_macro=0.8161 | auprc_macro=0.4478
+seed=45 | acc=0.6962 | f1_macro=0.5214 | f1_weighted=0.7155 | auroc_macro=0.8220 | auprc_macro=0.4538
+seed=46 | acc=0.7110 | f1_macro=0.5220 | f1_weighted=0.7230 | auroc_macro=0.8214 | auprc_macro=0.4525
+
+
+____________________________________________________________________________________________________________ ____________________________________________________________________________________________________________ ____________________________________________________________________________________________________________ ____________________________________________________________________________________________________________ ____________________________________________________________________________________________________________
+
+
+MIMIC III RUNS:
+
+
+MIMIC-III Hybrid BiLSTM + BiMamba + Static ANN Fusion Binary | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.8530 ± 0.0029
+test_f1_macro: 0.7348 ± 0.0031
+test_f1_weighted: 0.8552 ± 0.0022
+test_auroc: 0.8530 ± 0.0159
+test_auprc: 0.5784 ± 0.0169
+
+Per-seed:
+seed=42 | acc=0.8573 | f1_macro=0.7392 | f1_weighted=0.8585 | auroc=0.8601 | auprc=0.5867
+seed=43 | acc=0.8511 | f1_macro=0.7353 | f1_weighted=0.8543 | auroc=0.8581 | auprc=0.5833
+seed=44 | acc=0.8500 | f1_macro=0.7307 | f1_weighted=0.8525 | auroc=0.8247 | auprc=0.5491
+seed=45 | acc=0.8524 | f1_macro=0.7336 | f1_weighted=0.8545 | auroc=0.8633 | auprc=0.5917
+seed=46 | acc=0.8544 | f1_macro=0.7354 | f1_weighted=0.8560 | auroc=0.8589 | auprc=0.5815
+
+
+
+MIMIC-III Hybrid BiLSTM + BiMamba + Static ANN Fusion Ordinal | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.6696 ± 0.0051
+test_f1_macro: 0.5724 ± 0.0066
+test_f1_weighted: 0.6784 ± 0.0046
+test_auroc_macro: 0.8439 ± 0.0021
+test_auprc_macro: 0.6664 ± 0.0038
+test_auroc_gt3: 0.8260 ± 0.0038
+test_auroc_gt7: 0.8618 ± 0.0015
+test_auprc_gt3: 0.7447 ± 0.0042
+test_auprc_gt7: 0.5881 ± 0.0039
+
+Per-seed:
+seed=42 | acc=0.6693 | f1_macro=0.5795 | f1_weighted=0.6802 | auroc_macro=0.8453 | auprc_macro=0.6698 | auroc_gt3=0.8272 | auroc_gt7=0.8633 | auprc_gt3=0.7468 | auprc_gt7=0.5928
+seed=43 | acc=0.6731 | f1_macro=0.5665 | f1_weighted=0.6777 | auroc_macro=0.8429 | auprc_macro=0.6608 | auroc_gt3=0.8232 | auroc_gt7=0.8627 | auprc_gt3=0.7396 | auprc_gt7=0.5821
+seed=44 | acc=0.6746 | f1_macro=0.5758 | f1_weighted=0.6822 | auroc_macro=0.8433 | auprc_macro=0.6678 | auroc_gt3=0.8271 | auroc_gt7=0.8595 | auprc_gt3=0.7463 | auprc_gt7=0.5894
+seed=45 | acc=0.6613 | f1_macro=0.5644 | f1_weighted=0.6708 | auroc_macro=0.8414 | auprc_macro=0.6643 | auroc_gt3=0.8214 | auroc_gt7=0.8613 | auprc_gt3=0.7412 | auprc_gt7=0.5874
+seed=46 | acc=0.6697 | f1_macro=0.5758 | f1_weighted=0.6813 | auroc_macro=0.8467 | auprc_macro=0.6693 | auroc_gt3=0.8310 | auroc_gt7=0.8624 | auprc_gt3=0.7498 | auprc_gt7=0.5887
+
+____________________________________________________________________________________________________________ _________________________________________________________________________________________________________
+
+
+MIMIC-III BiLSTM + Static ANN Fusion Binary | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.8539 ± 0.0047
+test_f1_macro: 0.7422 ± 0.0028
+test_f1_weighted: 0.8575 ± 0.0029
+test_auroc: 0.8514 ± 0.0073
+test_auprc: 0.5796 ± 0.0081
+
+Per-seed:
+seed=42 | acc=0.8564 | f1_macro=0.7411 | f1_weighted=0.8585 | auroc=0.8467 | auprc=0.5858
+seed=43 | acc=0.8503 | f1_macro=0.7441 | f1_weighted=0.8562 | auroc=0.8586 | auprc=0.5738
+seed=44 | acc=0.8475 | f1_macro=0.7379 | f1_weighted=0.8531 | auroc=0.8415 | auprc=0.5728
+seed=45 | acc=0.8584 | f1_macro=0.7440 | f1_weighted=0.8603 | auroc=0.8521 | auprc=0.5750
+seed=46 | acc=0.8567 | f1_macro=0.7441 | f1_weighted=0.8595 | auroc=0.8580 | auprc=0.5908
+
+
+MIMIC-III BiLSTM + Static ANN Fusion Ordinal | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.6826 ± 0.0034
+test_f1_macro: 0.5830 ± 0.0060
+test_f1_weighted: 0.6882 ± 0.0022
+test_auroc_macro: 0.8463 ± 0.0038
+test_auprc_macro: 0.6670 ± 0.0049
+test_auroc_gt3: 0.8294 ± 0.0029
+test_auroc_gt7: 0.8631 ± 0.0055
+test_auprc_gt3: 0.7444 ± 0.0036
+test_auprc_gt7: 0.5896 ± 0.0065
+
+Per-seed:
+seed=42 | acc=0.6842 | f1_macro=0.5926 | f1_weighted=0.6911 | auroc_macro=0.8454 | auprc_macro=0.6663 | auroc_gt3=0.8272 | auroc_gt7=0.8635 | auprc_gt3=0.7419 | auprc_gt7=0.5907
+seed=43 | acc=0.6827 | f1_macro=0.5794 | f1_weighted=0.6876 | auroc_macro=0.8467 | auprc_macro=0.6718 | auroc_gt3=0.8281 | auroc_gt7=0.8653 | auprc_gt3=0.7476 | auprc_gt7=0.5960
+seed=44 | acc=0.6781 | f1_macro=0.5792 | f1_weighted=0.6849 | auroc_macro=0.8403 | auprc_macro=0.6591 | auroc_gt3=0.8271 | auroc_gt7=0.8535 | auprc_gt3=0.7394 | auprc_gt7=0.5789
+seed=45 | acc=0.6872 | f1_macro=0.5787 | f1_weighted=0.6887 | auroc_macro=0.8486 | auprc_macro=0.6674 | auroc_gt3=0.8308 | auroc_gt7=0.8664 | auprc_gt3=0.7453 | auprc_gt7=0.5895
+seed=46 | acc=0.6807 | f1_macro=0.5852 | f1_weighted=0.6888 | auroc_macro=0.8503 | auprc_macro=0.6702 | auroc_gt3=0.8338 | auroc_gt7=0.8669 | auprc_gt3=0.7476 | auprc_gt7=0.5929
+
+____________________________________________________________________________________________________________ _________________________________________________________________________________________________________
+
+MIMIC-III OME-Fusion Binary | 5-Seed Summary
+BiLSTM + Transformer + Mamba + Static ANN
+
+Mean ± SD:
+test_acc: 0.8537 ± 0.0060
+test_f1_macro: 0.7347 ± 0.0033
+test_f1_weighted: 0.8554 ± 0.0026
+test_auroc: 0.8576 ± 0.0035
+test_auprc: 0.5789 ± 0.0020
+
+Per-seed:
+seed=42 | acc=0.8524 | f1_macro=0.7341 | f1_weighted=0.8546 | auroc=0.8587 | auprc=0.5775
+seed=43 | acc=0.8629 | f1_macro=0.7307 | f1_weighted=0.8589 | auroc=0.8601 | auprc=0.5783
+seed=44 | acc=0.8487 | f1_macro=0.7330 | f1_weighted=0.8525 | auroc=0.8593 | auprc=0.5814
+seed=45 | acc=0.8484 | f1_macro=0.7396 | f1_weighted=0.8540 | auroc=0.8587 | auprc=0.5769
+seed=46 | acc=0.8561 | f1_macro=0.7361 | f1_weighted=0.8571 | auroc=0.8514 | auprc=0.5806
+
+
+MIMIC-III OME-Fusion Ordinal | 5-Seed Summary
+BiLSTM + Transformer + Mamba + Static ANN
+
+Mean ± SD:
+test_acc: 0.6775 ± 0.0067
+test_f1_macro: 0.5769 ± 0.0055
+test_f1_weighted: 0.6835 ± 0.0039
+test_auroc_macro: 0.8460 ± 0.0038
+test_auprc_macro: 0.6627 ± 0.0084
+test_auroc_gt3: 0.8288 ± 0.0038
+test_auroc_gt7: 0.8633 ± 0.0044
+test_auprc_gt3: 0.7453 ± 0.0062
+test_auprc_gt7: 0.5800 ± 0.0137
+
+Per-seed:
+seed=42 | acc=0.6720 | f1_macro=0.5692 | f1_weighted=0.6781 | auroc_macro=0.8428 | auprc_macro=0.6551 | auroc_gt3=0.8252 | auroc_gt7=0.8605 | auprc_gt3=0.7356 | auprc_gt7=0.5746
+seed=43 | acc=0.6809 | f1_macro=0.5831 | f1_weighted=0.6860 | auroc_macro=0.8497 | auprc_macro=0.6734 | auroc_gt3=0.8304 | auroc_gt7=0.8689 | auprc_gt3=0.7484 | auprc_gt7=0.5983
+seed=44 | acc=0.6861 | f1_macro=0.5737 | f1_weighted=0.6872 | auroc_macro=0.8499 | auprc_macro=0.6676 | auroc_gt3=0.8330 | auroc_gt7=0.8668 | auprc_gt3=0.7523 | auprc_gt7=0.5829
+seed=45 | acc=0.6696 | f1_macro=0.5793 | f1_weighted=0.6807 | auroc_macro=0.8463 | auprc_macro=0.6638 | auroc_gt3=0.8310 | auroc_gt7=0.8617 | auprc_gt3=0.7442 | auprc_gt7=0.5834
+seed=46 | acc=0.6792 | f1_macro=0.5795 | f1_weighted=0.6852 | auroc_macro=0.8415 | auprc_macro=0.6535 | auroc_gt3=0.8242 | auroc_gt7=0.8587 | auprc_gt3=0.7462 | auprc_gt7=0.5608
+
+____________________________________________________________________________________________________________ _________________________________________________________________________________________________________
+
+MIMIC-III PatchTST-style Transformer + Static ANN Fusion Binary | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.8571 ± 0.0074
+test_f1_macro: 0.7378 ± 0.0058
+test_f1_weighted: 0.8580 ± 0.0050
+test_auroc: 0.8553 ± 0.0080
+test_auprc: 0.5770 ± 0.0082
+
+Per-seed:
+seed=42 | acc=0.8628 | f1_macro=0.7392 | f1_weighted=0.8612 | auroc=0.8637 | auprc=0.5847
+seed=43 | acc=0.8641 | f1_macro=0.7430 | f1_weighted=0.8629 | auroc=0.8613 | auprc=0.5819
+seed=44 | acc=0.8457 | f1_macro=0.7290 | f1_weighted=0.8498 | auroc=0.8440 | auprc=0.5633
+seed=45 | acc=0.8585 | f1_macro=0.7354 | f1_weighted=0.8581 | auroc=0.8564 | auprc=0.5768
+seed=46 | acc=0.8543 | f1_macro=0.7425 | f1_weighted=0.8578 | auroc=0.8510 | auprc=0.5783
+
+
+MIMIC-III PatchTST-style Transformer + Static ANN Fusion Ordinal | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.6727 ± 0.0084
+test_f1_macro: 0.5779 ± 0.0077
+test_f1_weighted: 0.6820 ± 0.0063
+test_auroc_macro: 0.8457 ± 0.0028
+test_auprc_macro: 0.6629 ± 0.0088
+test_auroc_gt3: 0.8275 ± 0.0035
+test_auroc_gt7: 0.8639 ± 0.0027
+test_auprc_gt3: 0.7439 ± 0.0064
+test_auprc_gt7: 0.5819 ± 0.0114
+
+Per-seed:
+seed=42 | acc=0.6830 | f1_macro=0.5858 | f1_weighted=0.6889 | auroc_macro=0.8483 | auprc_macro=0.6705 | auroc_gt3=0.8293 | auroc_gt7=0.8672 | auprc_gt3=0.7476 | auprc_gt7=0.5934
+seed=43 | acc=0.6800 | f1_macro=0.5853 | f1_weighted=0.6886 | auroc_macro=0.8474 | auprc_macro=0.6696 | auroc_gt3=0.8314 | auroc_gt7=0.8633 | auprc_gt3=0.7500 | auprc_gt7=0.5892
+seed=44 | acc=0.6706 | f1_macro=0.5731 | f1_weighted=0.6794 | auroc_macro=0.8471 | auprc_macro=0.6639 | auroc_gt3=0.8281 | auroc_gt7=0.8661 | auprc_gt3=0.7448 | auprc_gt7=0.5829
+seed=45 | acc=0.6645 | f1_macro=0.5774 | f1_weighted=0.6778 | auroc_macro=0.8444 | auprc_macro=0.6621 | auroc_gt3=0.8265 | auroc_gt7=0.8623 | auprc_gt3=0.7439 | auprc_gt7=0.5804
+seed=46 | acc=0.6654 | f1_macro=0.5679 | f1_weighted=0.6755 | auroc_macro=0.8415 | auprc_macro=0.6484 | auroc_gt3=0.8222 | auroc_gt7=0.8608 | auprc_gt3=0.7333 | auprc_gt7=0.5636
+
+____________________________________________________________________________________________________________ _________________________________________________________________________________________________________
+
+MIMIC-III Pure BiMamba + Static ANN Fusion Binary | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.8567 ± 0.0038
+test_f1_macro: 0.7407 ± 0.0028
+test_f1_weighted: 0.8585 ± 0.0019
+test_auroc: 0.8628 ± 0.0009
+test_auprc: 0.5901 ± 0.0021
+
+Per-seed:
+seed=42 | acc=0.8588 | f1_macro=0.7376 | f1_weighted=0.8588 | auroc=0.8620 | auprc=0.5907 | best_epoch=8
+seed=43 | acc=0.8571 | f1_macro=0.7428 | f1_weighted=0.8593 | auroc=0.8642 | auprc=0.5876 | best_epoch=7
+seed=44 | acc=0.8600 | f1_macro=0.7385 | f1_weighted=0.8596 | auroc=0.8623 | auprc=0.5915 | best_epoch=5
+seed=45 | acc=0.8502 | f1_macro=0.7407 | f1_weighted=0.8552 | auroc=0.8633 | auprc=0.5925 | best_epoch=8
+seed=46 | acc=0.8572 | f1_macro=0.7442 | f1_weighted=0.8597 | auroc=0.8622 | auprc=0.5884 | best_epoch=11
+
+
+
+MIMIC-III Pure BiMamba + Static ANN Fusion Ordinal | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.6782 ± 0.0079
+test_f1_macro: 0.5779 ± 0.0042
+test_f1_weighted: 0.6829 ± 0.0042
+test_auroc_macro: 0.8466 ± 0.0044
+test_auprc_macro: 0.6708 ± 0.0066
+test_auroc_gt3: 0.8287 ± 0.0031
+test_auroc_gt7: 0.8645 ± 0.0059
+test_auprc_gt3: 0.7461 ± 0.0058
+test_auprc_gt7: 0.5955 ± 0.0076
+
+Per-seed:
+seed=42 | acc=0.6843 | f1_macro=0.5831 | f1_weighted=0.6881 | auroc_macro=0.8478 | auprc_macro=0.6716 | auroc_gt3=0.8301 | auroc_gt7=0.8656 | auprc_gt3=0.7473 | auprc_gt7=0.5959 | best_epoch=8
+seed=43 | acc=0.6828 | f1_macro=0.5783 | f1_weighted=0.6842 | auroc_macro=0.8482 | auprc_macro=0.6725 | auroc_gt3=0.8284 | auroc_gt7=0.8679 | auprc_gt3=0.7454 | auprc_gt7=0.5995 | best_epoch=7
+seed=44 | acc=0.6652 | f1_macro=0.5776 | f1_weighted=0.6764 | auroc_macro=0.8487 | auprc_macro=0.6765 | auroc_gt3=0.8309 | auroc_gt7=0.8665 | auprc_gt3=0.7513 | auprc_gt7=0.6016 | best_epoch=9
+seed=45 | acc=0.6763 | f1_macro=0.5792 | f1_weighted=0.6835 | auroc_macro=0.8493 | auprc_macro=0.6739 | auroc_gt3=0.8304 | auroc_gt7=0.8682 | auprc_gt3=0.7498 | auprc_gt7=0.5980 | best_epoch=9
+seed=46 | acc=0.6823 | f1_macro=0.5715 | f1_weighted=0.6822 | auroc_macro=0.8388 | auprc_macro=0.6595 | auroc_gt3=0.8235 | auroc_gt7=0.8541 | auprc_gt3=0.7365 | auprc_gt7=0.5825 | best_epoch=17
+
+____________________________________________________________________________________________________________ _________________________________________________________________________________________________________
+
+
+MIMIC-III Transformer + Static ANN Fusion Binary | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.8516 ± 0.0045
+test_f1_macro: 0.7347 ± 0.0060
+test_f1_weighted: 0.8543 ± 0.0022
+test_auroc: 0.8602 ± 0.0018
+test_auprc: 0.5802 ± 0.0026
+
+Per-seed:
+seed=42 | acc=0.8584 | f1_macro=0.7257 | f1_weighted=0.8554 | auroc=0.8583 | auprc=0.5789 | best_epoch=8
+seed=43 | acc=0.8511 | f1_macro=0.7373 | f1_weighted=0.8548 | auroc=0.8629 | auprc=0.5820 | best_epoch=6
+seed=44 | acc=0.8511 | f1_macro=0.7390 | f1_weighted=0.8553 | auroc=0.8612 | auprc=0.5838 | best_epoch=5
+seed=45 | acc=0.8515 | f1_macro=0.7401 | f1_weighted=0.8557 | auroc=0.8592 | auprc=0.5776 | best_epoch=6
+seed=46 | acc=0.8457 | f1_macro=0.7313 | f1_weighted=0.8504 | auroc=0.8594 | auprc=0.5787 | best_epoch=4
+
+
+MIMIC-III Transformer + Static ANN Fusion Ordinal | 5-Seed Summary
+
+Mean ± SD:
+test_acc: 0.6768 ± 0.0033
+test_f1_macro: 0.5773 ± 0.0030
+test_f1_weighted: 0.6842 ± 0.0013
+test_auroc_macro: 0.8498 ± 0.0006
+test_auprc_macro: 0.6707 ± 0.0026
+test_auroc_gt3: 0.8330 ± 0.0015
+test_auroc_gt7: 0.8665 ± 0.0012
+test_auprc_gt3: 0.7517 ± 0.0014
+test_auprc_gt7: 0.5898 ± 0.0050
+
+Per-seed:
+seed=42 | acc=0.6799 | f1_macro=0.5725 | f1_weighted=0.6848 | auroc_macro=0.8505 | auprc_macro=0.6699 | auroc_gt3=0.8352 | auroc_gt7=0.8658 | auprc_gt3=0.7524 | auprc_gt7=0.5874
+seed=43 | acc=0.6736 | f1_macro=0.5800 | f1_weighted=0.6825 | auroc_macro=0.8492 | auprc_macro=0.6700 | auroc_gt3=0.8330 | auroc_gt7=0.8653 | auprc_gt3=0.7507 | auprc_gt7=0.5893
+seed=44 | acc=0.6794 | f1_macro=0.5789 | f1_weighted=0.6860 | auroc_macro=0.8492 | auprc_macro=0.6674 | auroc_gt3=0.8324 | auroc_gt7=0.8660 | auprc_gt3=0.7503 | auprc_gt7=0.5845
+seed=45 | acc=0.6729 | f1_macro=0.5785 | f1_weighted=0.6837 | auroc_macro=0.8498 | auprc_macro=0.6746 | auroc_gt3=0.8312 | auroc_gt7=0.8683 | auprc_gt3=0.7512 | auprc_gt7=0.5980
+seed=46 | acc=0.6780 | f1_macro=0.5768 | f1_weighted=0.6840 | auroc_macro=0.8502 | auprc_macro=0.6717 | auroc_gt3=0.8334 | auroc_gt7=0.8671 | auprc_gt3=0.7538 | auprc_gt7=0.5896
+
+____________________________________________________________________________________________________________ _________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
